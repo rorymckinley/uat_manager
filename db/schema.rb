@@ -13,6 +13,9 @@
 ActiveRecord::Schema.define(:version => 20100910193436) do
 
   create_table "acceptance_tests", :force => true do |t|
+    t.string   "name"
+    t.string   "context"
+    t.string   "starting_point"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

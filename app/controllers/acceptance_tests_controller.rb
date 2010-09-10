@@ -1,5 +1,5 @@
 class AcceptanceTestsController < ApplicationController
   def create
-    render :text => '', :status => :ok
+    render :text => AcceptanceTest.create(params[:acceptance_test]).id, :status => :ok
   end
 end
